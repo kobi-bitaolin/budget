@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>B-A-L-A-N-C-E</title>
+    <link rel="stylesheet" href="/balance.css">
+    <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body>
+  
+    <div id="erorr"><i id="x" class="fas fa-times-circle"></i>Error!!! Retrying Please note that you enter correct values ​​in the appropriate boxes</div>
+    <div id="Top-head">
+        <div id="date">
+            <span id="budget">Avilable Budget in</span> <span id="month"> </span> <span id="year"> </span>
+        </div>
+       
+
+
+        <h1 id="balance">-0.00</h1>
+
+
+        <p id="income-taxt-number">
+            <span id="incomeHeadTaxt">INCOME</span> <span id="incomeHeadNumbers"> +0.00 </span>
+        </p>
+
+        <p id="expenses-taxt-number">
+            <span id="expensesHeadTaxt"> EXPENSES </span> <span id="expensesHeadNumbers">-0.00</span>
+            <span id="percentage">0</span>
+        </p>
+
+    </div>
+    <div id="inputArea">
+
+        <select id="select">
+            <option value="incomes"> + </option>
+            <option value="exspenses"> - </option>
+        </select>
+        <input type="text" name="" id="idDescription" placeholder="AddDescription">
+        <input type="number" name="" id="idValue" placeholder="value">
+        <i id="iButton" class="far fa-check-circle " onclick="createIncomeOutcome()"></i>
+
+
+    </div>
+    
+
+    <div id="list">
+
+        <div id="incomeDIVlist">  
+            <p id="ButtomListIncomHead">INCOME</p>
+        </div>
+
+        <div id="espensesDIVlist">
+            <p id="ButtomListExpensesHead"> EXPENSES</p>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/balance.js"></script>
+</body>
+
+</html>

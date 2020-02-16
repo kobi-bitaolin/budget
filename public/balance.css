@@ -1,0 +1,251 @@
+body{
+    margin: auto 0;
+    padding: 0;
+}
+#espensesDIVlist,#incomeDIVlist{
+    padding: 20px;
+    width: 90%;
+    
+ }
+
+#Top-head{
+    text-align: center;
+}
+
+#inputArea{
+    text-align: center;
+}
+
+#ButtomListIncomHead{
+    color: rgba(0, 128, 0, 0.603);
+    width: 90%;
+}
+
+#ButtomListExpensesHead{
+    color:  rgba(255, 0, 0, 0.541);
+    width: 90%;
+
+}
+
+#expensesHeadNumbers{
+    color: white;
+    /* margin-right: 5px; */
+    padding-right: 5px;
+    
+    
+}
+
+#incomeHeadNumbers{
+      color: white;
+      padding-right: 31px;
+     
+  }
+
+
+
+#incomeHeadTaxt{
+    margin-right: auto;
+    padding: 0 10px;
+
+}
+
+#expensesHeadTaxt{
+    margin-right: auto;
+    padding: 0 5px;
+   
+
+}
+
+#Top-head{
+    width: 100%;
+    text-align: center;
+    background:url(https://cdn.pixabay.com/photo/2017/07/24/12/43/schrecksee-2534484__340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    position: relative;
+
+}
+
+#month{
+    color: white;
+    font-size: 23px;
+}
+
+#year{
+    color: white;
+    font-size: 23px;
+}
+#budget{
+    color: white;
+  font-size: 23px;
+}
+
+
+
+#idDescription{
+    width: 25%;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+
+}
+
+#idValue{
+    width: 5%;
+    height: 40px;
+    border-radius: 3px;
+    padding-left: 5px;
+    outline: none;
+
+}
+
+#select{
+    width: 5%;
+    height: 40px;
+   
+}
+
+#inputArea{
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+  }
+
+  #expenses-taxt-number{
+      border: solid 2px #eee;
+      width: 30%;
+      margin: 10px auto;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color:#f93c42;
+      display: flex;
+      /* align-items: center; */
+
+  }
+
+  #income-taxt-number{
+    border: solid 2px #eee;
+    width: 30%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #36b3ab;
+    display: flex;
+
+  }
+
+  #balance{
+   color: white;
+  }
+
+  #iButton{
+    font-size: 25px;
+    color: #36b3ab;
+    
+}
+
+
+#erorr{
+    width: 100%;
+    height: 40px;
+    z-index: 10;
+    background-color: rgb(220, 20, 20);
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    display: none;
+    border: solid 2px black; 
+}
+
+
+ i.x.far.fa-times-circle:hover {
+    background-color: rgb(245, 244 ,245);
+    opacity: 1;
+    right: 2%;
+    font-size: 20px;
+
+}
+
+.x .far{
+    margin-right: 30px;
+}
+
+/* p:hover{
+  background-color: rgb(245, 245, 244); 
+} */
+
+p>div:nth-child(odd){
+   background-color: rgb(245, 245, 244); 
+}
+
+#percentage{
+    
+    color: white;
+    background-color: rgba(255, 192, 203, 0.281);
+    border: rgb(221, 160, 208) 2px solid;
+    padding: 0 5px;
+    margin-right: 5px;
+    font-size: 12px;
+    justify-content: space-between;
+}
+
+
+#list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.listMaker{
+    display: flex;
+    padding: 6px;
+}
+
+.listMaker > * {
+margin-right: 15px;
+
+}
+
+.spanPreceng{
+    border: rgb(221, 160, 189) 2px solid;
+}
+
+.description_text{
+    margin-right: auto;
+    
+}
+
+
+
+@media screen and (max-width: 850px){
+    #list{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 577px){
+ 
+    #expenses-taxt-number {
+        border: solid 2px #eee;
+        width: 55%;
+        margin: 10px auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #f93c42;
+        display: flex;
+        align-items: center;
+    }
+    #income-taxt-number {
+        border: solid 2px #eee;
+        width: 55%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #36b3ab;
+        display: flex;
+    }
+}
+
